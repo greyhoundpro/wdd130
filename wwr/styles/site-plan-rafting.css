@@ -2,7 +2,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lakki+Reddy&family=Lobster&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&family=Lobster&family=Merienda&family=Roboto&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -12,7 +12,7 @@ Fonts are separated by a & */
   --accent2-color: #785964;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Lobster";
+  --heading-font: "Merienda";
   --paragraph-font: Roboto, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
