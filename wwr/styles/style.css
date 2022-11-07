@@ -120,7 +120,7 @@ main section img {
 }
 .rivers-home-grid {
     display: grid;
-    grid-template-columns: 1fr,1fr,1fr,1fr, 20px, 1fr,1fr, 1fr, 1fr;
+    grid-template-columns: auto;
     justify-items: center;
 }
 .rivers-images {
