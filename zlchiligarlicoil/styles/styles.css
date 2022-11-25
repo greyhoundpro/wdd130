@@ -110,6 +110,7 @@ nav a {
     justify-self: center;
     align-self: center;
     margin: 200px 0;
+    width:90%;
 }
 .feedback-img {
     grid-column: 6/11;
@@ -188,4 +189,57 @@ footer p a:hover {
 }
 .button:hover {
     background-color: #62030b;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+   
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+   
+    .feedback-img {
+        margin-left: 60px;
+        width: 80%;
+    }
+    
+    nav .button-box a {
+        margin: 0 auto;
+    }
+    
+    .main-article {
+        text-align: center;
+        margin-left: 35px;
+    }
+   
+    .feedback {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .background {
+        display: none;
+    }
+    .chili, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    .chili {
+        margin-top: 100px;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
