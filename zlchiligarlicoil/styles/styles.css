@@ -73,6 +73,9 @@ nav a {
     z-index: -1;
     opacity: 0.8;
 }
+#recipe-hero-image {
+    width: 100%;
+}
 #recipe-title {
     grid-column: 2/3;
     grid-row: 1/3;
@@ -286,7 +289,7 @@ html {
 }
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid, .recipe-grid {
+    #hero, .home-grid, .recipe-grid, #recipe-hero {
         display: block;
         height: auto;
     }
@@ -309,6 +312,9 @@ html {
     .recipe-main-title{
         margin: 35px;
         text-align: center;
+    }
+    #recipe-title h1 {
+        font-size: 60px;
     }
     .description-img {
         margin-left: 60px;
