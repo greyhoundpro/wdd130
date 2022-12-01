@@ -12,6 +12,7 @@ body {
 }
 .logo {
     width: 130px;
+    margin-left: 50px;
 }
 #logo-link {
     padding-top: 5px;
@@ -80,7 +81,7 @@ nav a {
 #recipe-title h1 {
     text-align: center;
     font-size: 7em;
-    color: rgb(17, 9, 9);
+    color: rgb(160, 36, 36);
 }
 .main-headline {
     grid-column: 4/7;
@@ -113,6 +114,55 @@ nav a {
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+}
+.recipe-grid { 
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.recipe-main-title {
+    grid-column: 3/9;
+    grid-row: 2/3;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.intro-description  {
+    grid-column: 2/6;
+    grid-row: 4/5;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    background-color: #ded6d2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+.intro-description p, .recipe-main-title p, .ingredients ul, 
+.instructions ol {
+    line-height: 1.75;
+}
+.description-img {
+    grid-column: 6/11;
+    grid-row: 4/5;
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px gray;
+}
+.ingredients {
+    grid-column: 3/8;
+    grid-row: 6/9;
+}
+.instructions {
+    grid-column: 3/8;
+    grid-row: 9/11;
+}
+.recipe-chili-garlic {
+    grid-column: 3/8;
+    grid-row: 11/13;
+}
+.recipe-chili-garlic p, li {
+    line-height: 1.75;
 }
 .main-article {
     grid-column: 2/10;
@@ -236,7 +286,7 @@ html {
 }
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .recipe-grid {
         display: block;
         height: auto;
     }
@@ -256,6 +306,19 @@ html {
         margin-left: 60px;
         width: 80%;
     }
+    .recipe-main-title{
+        margin: 35px;
+        text-align: center;
+    }
+    .description-img {
+        margin-left: 60px;
+        width: 80%;
+    }
+    .intro-description {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
     
     nav .button-box a {
         margin: 0 auto;
@@ -265,6 +328,12 @@ html {
         text-align: center;
         margin-left: 35px;
     }
+    .ingredients, .instructions, .recipe-chili-garlic {
+        margin-left: 60px;
+        margin-right: 60px;
+
+    }
+
    
     .feedback {
         width: 90%;
